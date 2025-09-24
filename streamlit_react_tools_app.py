@@ -12,8 +12,8 @@ from database_tools import text_to_sql, init_database, get_database_info
 # --- 1. Page Configuration and Title ---
 
 # Set the title and a caption for the web page
-st.title("💬 SQL Assistant with LangGraph")
-st.caption("A chatbot that can answer questions about sales data using SQL")
+st.title("💬 Vokasi Asisstant")
+st.caption("Ask questions abot anything related to your interests")
 
 # --- 2. Sidebar for Settings ---
 
@@ -30,14 +30,9 @@ with st.sidebar:
     # 'help' provides a tooltip that appears when hovering over the button.
     reset_button = st.button("Reset Conversation", help="Clear all messages and start fresh")
     
-    # Add a button to initialize the database
-    init_db_button = st.button("Initialize Database", help="Create and populate the database with sample data")
+   
     
-    # Initialize database if button is clicked
-    if init_db_button:
-        with st.spinner("Initializing database..."):
-            result = init_database()
-            st.success(result)
+ 
 
 # --- 3. API Key and Agent Initialization ---
 
