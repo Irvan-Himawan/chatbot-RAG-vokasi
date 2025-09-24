@@ -104,7 +104,7 @@ if ("agent" not in st.session_state) or (getattr(st.session_state, "_last_key", 
             
             If you encounter any errors:
             - Explain what went wrong
-            - Fix the SQL query and try again
+            - Fix the SQL query and try againn
             
             Remember: You must generate the SQL query yourself based on the user's question and the database schema.
             Do not ask the user to provide SQL queries.
